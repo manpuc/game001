@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="srcFile\img\favicon.ico">
+    <title>sampleGame</title>
+</head>
+<body background="srcFile\img\blue-lake-star-trails-4k.jpg" style="background-size: cover;">
+<!-- header -->
+    <div class="header"></div>
+<!-- main -->
+    <div class="main">
+        <h1>ぴったりとめるゲーム！</h1>
+        <div class="game">
+            <h2 id="js-result">秒数を選択してください</h2>
+            <button >
+                <p id="js-btn" onclick="csb()">start</p>
+            </button>
+        </div>
+        <div class="setting">
+            <form name="timeForm">
+                <label><input type="radio" name="radio" value="5" onchange="timeSetBtn(this.value)">5秒</label>
+                <label><input type="radio" name="radio" value="10" onchange="timeSetBtn(this.value)">10秒</label>
+                <label><input type="radio" name="radio" value="15" onchange="timeSetBtn(this.value)">15秒</label>
+            </form>
+            <form>
+                <label>
+                    <input type="checkbox" id="countdown">
+                    Countdown(未実装)
+                </label>
+            </form>
+            <p id="timeLeft"></p>
+            <img src="srcFile\img\dancingCat.gif" alt="がんばれ～" width="250px">
+        </div>
+    </div>
+<!-- footer -->
+    <div class="footer"></div>
+<!-- javaScript -->
+<script src="js/index.js">
+
+
+
+</script>
+</body>
+</html>
