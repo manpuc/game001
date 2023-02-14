@@ -11,6 +11,45 @@ html head body{
     text-align: center;
     color: #ffffff;
 }
+.btn {
+    display: inline-block;
+    position: relative;
+    padding: 0 0px;
+    background: #ffffff;
+    border-radius: 3px;
+    text-align: center;
+    color: #000000;
+    line-height: 50px;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+}
+.btn:hover {
+    background: #ffffff;
+}
+.btn:active p::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left:-50px;
+    content: "";
+    background: #747474;
+    border-radius: 100%;
+    opacity: 0;
+    animation: ripple 0.3s 1 ease-out;
+}
+@keyframes ripple {
+    0% {
+    opacity: 1;
+    transform: scale(0.0);
+    }
+    100% {
+    opacity: 0;
+    transform: scale(2.0);
+    }
+}
     /*game*/
     .game{
         color: #ffffff;
@@ -28,7 +67,8 @@ html head body{
         border-radius: 0px;
     }
     .game button p{
-        margin: 2.5px 25px;
+        margin: 0%;
+        padding: 2.5px 35px;
         font-size: 40px;
     }
     /* setting */
