@@ -1,54 +1,26 @@
 /* set */
-html head body{
+html, head, body{
     margin: 0%;
     padding: 0%;
 }
-
+body {
+    background-image: url(./img/blue-lake-star-trails-4k.jpg);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
 /* header */
 /* main */
 
 .main h1{
+    margin-top: 50px;
     text-align: center;
     color: #ffffff;
-}
-.btn {
-    display: inline-block;
-    position: relative;
-    padding: 0 0px;
-    background: #ffffff;
-    border-radius: 3px;
-    text-align: center;
-    color: #000000;
-    line-height: 50px;
-    overflow: hidden;
-    transition: all 0.3s ease-in;
-}
-.btn:hover {
-    background: #ffffff;
-}
-.btn:active p::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100px;
-    height: 100px;
-    margin-top: -50px;
-    margin-left:-50px;
-    content: "";
-    background: #747474;
-    border-radius: 100%;
-    opacity: 0;
-    animation: ripple 0.3s 1 ease-out;
-}
-@keyframes ripple {
-    0% {
-    opacity: 1;
-    transform: scale(0.0);
-    }
-    100% {
-    opacity: 0;
-    transform: scale(2.0);
-    }
 }
     /*game*/
     .game{
@@ -56,20 +28,65 @@ html head body{
     }
     .game h2{
         text-align: center;
+        margin-bottom: 30px;
         font-size: 20px;
     }
     .game{
         text-align: center;
     }
     .game button{
+        margin: 0%;
+        /*padding: 2.5px 35px;*/
+        font-size: 40px;
+        height: 60px;
+        width: 150px;
         text-align: center;
         border-style: solid;
         border-radius: 0px;
     }
-    .game button p{
-        margin: 0%;
-        padding: 2.5px 35px;
-        font-size: 40px;
+    .game button p {
+        margin: 0px;
+        padding: 0px;
+    }
+    /* button design */
+    .btn {
+        display: inline-block;
+        position: relative;
+        padding: 0 0px;
+        background: #ffffff;
+        border-radius: 3px;
+        text-align: center;
+        color: #000000;
+        line-height: 50px;
+        overflow: hidden;
+        transition: all 0.3s ease-in;
+    }
+    .btn:hover {
+        background: #ffffff;
+    }
+    .btn:active p::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-top: -50px;
+        margin-left:-50px;
+        content: "";
+        background: #747474;
+        border-radius: 100%;
+        opacity: 0;
+        animation: ripple 0.2s 1 ease-out;
+    }
+    @keyframes ripple {
+        0% {
+        opacity: 1;
+        transform: scale(0.0);
+        }
+        100% {
+        opacity: 0;
+        transform: scale(2.0);
+        }
     }
     /* setting */
     .setting{
@@ -77,4 +94,44 @@ html head body{
         padding-top: 25px;
         text-align: center;
     }
+.timer img{
+    width: 250px;
+}
+.versionMark{
+    color: #ffffff;
+    margin: 0px 12px;
+    position: fixed;
+    bottom: 45px;
+    left: 0px;
+}
+
 /* footer */
+.footer {
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 60px;
+    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.5);
+}
+.footer h1{
+    font-size: 25px;
+    margin: 14px 0px 0px 12px;
+    float: left;
+}
+.footerNav li{
+    float: left;
+    padding-top: 5px;
+    margin-left: 20px;
+    text-shadow: 0 0 0px #000000;
+}
+    /* font zoom in */
+    .fontZoomIn{ 
+        transition: 0.5s; 
+    }
+    .fontZoomIn:hover{
+        transform: scale(1.1);
+    }
