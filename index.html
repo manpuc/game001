@@ -9,23 +9,34 @@
     <title>sampleGame</title>
     <meta name="description"  content="時間で遊ぶゲームです。">
 </head>
-<body background="srcFile\img\blue-lake-star-trails-4k.jpg" style="background-size: cover;">
+<body>
+    <!-- background="srcFile\img\blue-lake-star-trails-4k.jpg" style="background-size: cover;" -->
 <!-- header -->
     <div class="header"></div>
 <!-- main -->
     <div class="main">
-        <h1>ぴったりとめるゲーム！</h1>
+        <h1>ぴったりとめるゲーム</h1>
         <div class="game">
             <h2 id="js-result">秒数を選択してください</h2>
-            <button class="btn">
-                <p id="js-btn" onclick="csb()">start</p>
+            <button class="btn" id="js-btn" onclick="csb()">
+                <p style="margin: 0px; padding: 0px;"></p>
+                start
             </button>
         </div>
         <div class="setting">
             <form name="timeForm">
-                <label><input type="radio" name="radio" value="5" onchange="timeSetBtn(this.value)">5秒</label>
-                <label><input type="radio" name="radio" value="10" onchange="timeSetBtn(this.value)">10秒</label>
-                <label><input type="radio" name="radio" value="15" onchange="timeSetBtn(this.value)">15秒</label>
+                <label>
+                    <input type="radio" name="radio" value="5" onchange="timeSetBtn(this.value)">
+                    5秒
+                </label>
+                <label>
+                    <input type="radio" name="radio" value="10" onchange="timeSetBtn(this.value)">
+                    10秒
+                </label>
+                <label>
+                    <input type="radio" name="radio" value="15" onchange="timeSetBtn(this.value)">
+                    15秒
+                </label>
             </form>
             <form>
                 <label>
@@ -34,16 +45,41 @@
                 </label>
             </form>
             <p id="timeLeft"></p>
-            <img src="srcFile\img\dancingCat.gif" alt="がんばれ～" width="250px">
+        </div>
+        <div class="timer" style="text-align: center;">
+            <script type="text/javascript">
+                var imglist = new Array(
+                    "./srcFile/img/200w.gif",
+                    "./srcFile/img/bongo-cat-cat-meme.gif",
+                    "./srcFile/img/cat-space.gif",
+                    "./srcFile/img/dancingCat.gif" );
+                var selectnum = Math.floor(Math.random() * imglist.length);
+                var output = "<img src=" + imglist[selectnum] + ">";
+                document.write(output);
+            </script>
+        </div>
+        <div class="versionMark">
+            <p>Var.0.3.1</p>
         </div>
     </div>
 <!-- footer -->
-    <div class="footer"></div>
+    <div class="footer">
+        <h1>
+            <a href="#">Game001</a>
+        </h1>
+        <ul class="footerNav" style="list-style: none;">
+            <li class="fontZoomIn">
+                <a href="https://forms.gle/fWxFS7e5CVCbi8Bt6" target="_blank">Information</a>
+            </li>
+            <li class="fontZoomIn">
+                <a href="https://github.com/manpuc/game001" target="_blank">GitHub</a>
+            </li>
+        </ul>
+    </div>
 <!-- javaScript -->
 <script src="js/index.js">
-
-
-
+</script>
+<script src="js/clickSound.js">
 </script>
 </body>
 </html>
