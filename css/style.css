@@ -5,6 +5,7 @@ html, head, body{
 }
 body {
     background-image: url(./img/blue-lake-star-trails-4k.jpg);
+    background-size: cover;
     background-repeat: repeat-x;
     background-position: center;
     background-attachment: fixed;
