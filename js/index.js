@@ -1,25 +1,26 @@
 
 function timeSetBtn(val){
-    "use strict";//err check
-    // time setting
+    "use strict";/* err check */
+    /* time setting */
     let setTime = val;
-    // startStop btn
+    /* startStop btn */
     function changeButton(){
         document.getElementById('js-btn').textContent = 'stop' + "<p></p>";
     }
     document.getElementById('js-btn').addEventListener('click',changeButton);
 
-    // Game
+    /* Game */
     var isStarted = false;
     var startTime;
     var diff;
-    //time limit
+    /*time limit */
     var time = setTime;
     var msg = `${time}秒で止めろ！`;
     var result = document.getElementById("js-result");
     var btn = document.getElementById("js-btn");
+    var lvl = document.getElementById("lvlUpBtn");
+    var nowLvl = lvl.value /10;
     result.innerHTML = msg;
-    
     btn.addEventListener("click", function(){
     if(!isStarted){
         isStarted = true;
@@ -31,7 +32,7 @@ function timeSetBtn(val){
         this.innerHTML = "start" + "<p></p>";
         diff = (Date.now() - startTime) / 1000 - time;
         //console.log(diff);
-        if ( diff >= -0.1 && diff <= 0.1) {
+        if ( diff >= -nowLvl && diff <= nowLvl) {
         result.innerHTML = "てんさいだぁ！";
         const hitSound = new Audio('srcFile/audio/1.mp3');
         hitSound.play();
