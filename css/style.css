@@ -105,7 +105,20 @@ a{
     bottom: 45px;
     left: 0px;
 }
-
+    /* Level up button */
+    #lvlUpBtn{
+        color: #91ff76;
+        border: none;
+        text-align: center;
+        background-color: transparent;
+    }
+    #lvlUpBtn::-webkit-inner-spin-button{
+        display: none;
+        pointer-events: none;
+    }
+    #lvlUpBtn::-webkit-inner-spin-button:hover{
+        pointer-events: none;
+    }
 /* footer */
 .footer {
     object-fit: cover;
@@ -129,10 +142,33 @@ a{
     margin-left: 20px;
     text-shadow: 0 0 0px #000000;
 }
-    /* font zoom in */
+    /* move */
     .fontZoomIn{ 
         transition: 0.5s; 
     }
     .fontZoomIn:hover{
         transform: scale(1.1);
+    }
+    .timeSet{ 
+        transition: 0.5s; 
+        accent-color: #3b3b3b;
+    }
+    .timeSet:hover{
+        transform: scale(1.4);
+        background-color: transparent;
+        accent-color: #555555;
+    }
+    #lvlUpBtn{ 
+        transition: 0.5s;
+        width: 30px;
+    }
+    #lvlUpBtn:hover{
+        transform: scale(1.2);
+        border: none;
+        width: 35px;
+    }
+    #lvlUpBtn:focus{
+        transform: scale(1.5);
+        outline: none;
+        width: 40px;
     }
