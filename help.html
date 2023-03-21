@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>工事中...</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/help.css">
+    <link rel="icon" href="srcFile\img\favicon.ico">
+    <title>ぴたゲー</title>
+    <meta name="description"  content="時間で遊ぶゲームです。">
 </head>
-<body style="text-align: center;">
-    <h1 100px>しばし待ちたまえ</h1>
+<body>
+    <!-- background="srcFile\img\blue-lake-star-trails-4k.jpg" style="background-size: cover;" -->
+<!-- header -->
+    <div class="header"></div>
+<!-- main -->
+    <div class="main" style="text-align: center;color: #fff;">
+        <h1>ぴったりとめるゲーム</h1>
+        <h2>あそびかた</h2>
+        <div style="width: 100%;height: 250px;margin: 0%;">
+            <p style="padding: 0% 10%;">指定の時間にぴったりとめる、自分の体内時計で遊ぶよくあるゲームです。</p>
+            <p style="padding: 0% 10%;">[start]の下にある選択肢から秒数を選択して[start]を押すことでゲームを開始できます。</p>
+            <p style="padding: 0% 10%;">秒数選択のしたにある"Level ~ !!!"の"~"は左クリック、またはタップすることで入力、変更することができます。</p>
+        </div>
+        <h2>仕様説明</h2>
+        <div style="width: 100%;height: 250px;margin: 0%;">
+            <p style="padding: 0% 10%;">レベルは１～５０までしか選択できません。入力する際は必ず<span style="color: rgb(255, 93, 93);">半角数字</span>で入力してください。全角で入力すると正しく動作、入力できない可能性があります。</p>
+            <p style="padding: 0% 10%;">仕様の説明に不備あれば、下の"Information"からお願いします。</p>
+        </div>
+        <div class="versionMark">
+            <p>Var.1.3.4</p>
+        </div>
+    </div>
+    
+<!-- footer -->
+    <div class="footer">
+        <h1>
+            <a href="#">Game001</a>
+        </h1>
+        <ul class="footerNav" style="list-style: none;">
+            <li class="fontZoomIn">
+                <a href="index.html">Back</a>
+            </li>
+            <li class="fontZoomIn">
+                <a href="https://forms.gle/fWxFS7e5CVCbi8Bt6" target="_blank">Information</a>
+            </li>
+            <li class="fontZoomIn">
+                <a href="https://github.com/manpuc/game001" target="_blank">GitHub</a>
+            </li>
+        </ul>
+    </div>
+<!-- javaScript -->
+<script src="js/index.js">
+</script>
+<script src="js/clickSound.js">
+</script>
 </body>
 </html>
