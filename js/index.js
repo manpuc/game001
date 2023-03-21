@@ -8,7 +8,6 @@ function timeSetBtn(val){
         document.getElementById('js-btn').textContent = 'stop' + "<p></p>";
     }
     document.getElementById('js-btn').addEventListener('click',changeButton);
-
     /* Game */
     var isStarted = false;
     var startTime;
@@ -17,8 +16,8 @@ function timeSetBtn(val){
     var time = setTime;
     var msg = `${time}秒で止めろ！`;
     var result = document.getElementById("js-result");
-    var btn = document.getElementById("js-btn");
     var lvl = document.getElementById("lvlUpBtn");
+    var btn = document.getElementById("js-btn");
     var nowLvl = lvl.value /10;
     result.innerHTML = msg;
     btn.addEventListener("click", function(){
